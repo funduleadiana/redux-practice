@@ -7,19 +7,19 @@ export const getPosts = () => ({
     type: GET_POSTS,
 })
 
-export const getPostsSuccess = (posts) => ({
+export const getPostsSuccess = posts => ({
     type: GET_POSTS_SUCCESS,
     payload: posts
 })
 
-export const getPostsFailure = (posts) => ({
+export const getPostsFailure = () => ({
     type: GET_POSTS_FAILURE
 })
 
 //async thunk 
 
 export function fetchPosts(){
-    return async (dispatch) => {
+    return async dispatch => {
         dispatch(getPosts())
 
         try{
@@ -27,7 +27,7 @@ export function fetchPosts(){
             const data = await response.json()
             dispatch(getPostsSuccess(data))
         }
-        catch(err){
+        catch(error){
             dispatch(getPostsFailure())
         }
     }

@@ -1,0 +1,46 @@
+body{
+    margin: 20 px;
+
+}
+nav{
+    display: flex;
+    padding: 2rem 0;
+    background: linear-gradient(#e66465, #9198e5);
+    
+}
+nav section {
+    width: 100%;
+}
+
+nav a{
+    font-weight: 800;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    color: aqua;
+    text-decoration: none;
+}
+nav a:first-of-type{
+    margin-left: -1.5rem;
+}
+nav a:hover{
+    background: rgb(6, 59, 41);
+}
+section {
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5rem;
+}
+.button{
+    display: inline-block;
+    background: linear-gradient(#e66465, #9198e5);
+    color:aqua;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+}
+
+.button:hover{
+    background: rgb(6, 59, 41);
+}
